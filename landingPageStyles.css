@@ -1,0 +1,61 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 1rem;
+    color: #303137;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: 25px;
+}
+
+
+.brand, .nav-link, a {
+    text-transform: uppercase;
+    color: #303137;
+}
+
+.sensei {
+    color: #66b6d3
+}
+
+.topnav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topnav .nav-link, a {
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.dropdownLink {
+    display: none
+}
+
+@media (max-width: 768px) {
+    ul.topnav li a.nav-link {
+        display: none;
+    }
+    ul.topnav li.dropdownLink {
+        display: block;
+        top: 15px;
+        right: 20px;
+    }
+}
