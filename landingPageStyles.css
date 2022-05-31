@@ -53,9 +53,34 @@ html, body {
     ul.topnav li a.nav-link {
         display: none;
     }
+
     ul.topnav li.dropdownLink {
         display: block;
         top: 15px;
+        padding-right: 30px;
+    }
+
+    ul.topnav.responsive li.dropdownLink {
+        position: absolute;
+        top: 15px;
         right: 20px;
     }
+
+    ul.topnav.responsive {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    ul.topnav.responsive li {
+        position: relative;
+        top: 30px;
+        right: 30px;
+    }
+
+    ul.topnav.responsive li a.nav-link {
+        display: block;
+        line-height: 2;
+    }
+
+    
 }
